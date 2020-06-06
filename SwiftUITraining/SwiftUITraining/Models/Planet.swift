@@ -11,5 +11,5 @@ import Foundation
 struct Planet: Decodable {
     let name: String
     let shortDescription: String
-    let imageUrl: String
+    let imageUrl: URL
 }
