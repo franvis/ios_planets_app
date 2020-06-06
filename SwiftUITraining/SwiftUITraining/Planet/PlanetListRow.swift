@@ -9,15 +9,18 @@
 import SwiftUI
 
 struct PlanetListRow: View {
+
+    let planet: Planet
+
     var body: some View {
         HStack {
-            Image("Mercury")
+            Image(planet.imageUrl)
                 .resizable()
                 .frame(width: 60, height: 60)
             VStack(alignment: .leading) {
-                Text("Mercury")
+                Text(planet.name)
                     .font(Font.custom("Helvetica", size: 20))
-                Text("The Swiftest Planet")
+                Text(planet.shortDescription)
                     .font(Font.custom("Helvetica", size: 13))
                     .foregroundColor(.gray)
             }
@@ -28,7 +31,7 @@ struct PlanetListRow: View {
 
 struct PlanetListRow_Previews: PreviewProvider {
     static var previews: some View {
-        PlanetListRow()
+        PlanetListRow(planet: PlanetMockData.planets[0])
             .previewLayout(.fixed(width: 375, height: 80))
     }
 }

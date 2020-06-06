@@ -13,6 +13,10 @@
 		C184F526248A821000D32F6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C184F525248A821000D32F6B /* Assets.xcassets */; };
 		C184F529248A821000D32F6B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C184F528248A821000D32F6B /* Preview Assets.xcassets */; };
 		C184F52C248A821000D32F6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C184F52A248A821000D32F6B /* LaunchScreen.storyboard */; };
+		C19E3950248BBD01003F0D55 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19E394F248BBD01003F0D55 /* Planet.swift */; };
+		C19E3956248BC0DA003F0D55 /* EntityLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19E3955248BC0DA003F0D55 /* EntityLoader.swift */; };
+		C19E3958248BC10F003F0D55 /* planets.json in Resources */ = {isa = PBXBuildFile; fileRef = C19E3957248BC10F003F0D55 /* planets.json */; };
+		C19E395A248BC15F003F0D55 /* PlanetMockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19E3959248BC15F003F0D55 /* PlanetMockData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		C184F528248A821000D32F6B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C184F52B248A821000D32F6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C184F52D248A821000D32F6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C19E394F248BBD01003F0D55 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		C19E3955248BC0DA003F0D55 /* EntityLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityLoader.swift; sourceTree = "<group>"; };
+		C19E3957248BC10F003F0D55 /* planets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = planets.json; sourceTree = "<group>"; };
+		C19E3959248BC15F003F0D55 /* PlanetMockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetMockData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,9 @@
 		C184F51E248A820F00D32F6B /* SwiftUITraining */ = {
 			isa = PBXGroup;
 			children = (
+				C19E395B248BE76E003F0D55 /* Data */,
+				C19E3954248BC0CA003F0D55 /* Helpers */,
+				C19E3951248BBFD1003F0D55 /* Models */,
 				C19E394B248BB5BE003F0D55 /* Planet */,
 				C184F51F248A820F00D32F6B /* AppDelegate.swift */,
 				C184F521248A820F00D32F6B /* SceneDelegate.swift */,
@@ -81,6 +92,31 @@
 				C184F523248A820F00D32F6B /* PlanetListRow.swift */,
 			);
 			path = Planet;
+			sourceTree = "<group>";
+		};
+		C19E3951248BBFD1003F0D55 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C19E394F248BBD01003F0D55 /* Planet.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C19E3954248BC0CA003F0D55 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C19E3955248BC0DA003F0D55 /* EntityLoader.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C19E395B248BE76E003F0D55 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C19E3957248BC10F003F0D55 /* planets.json */,
+				C19E3959248BC15F003F0D55 /* PlanetMockData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +180,7 @@
 				C184F52C248A821000D32F6B /* LaunchScreen.storyboard in Resources */,
 				C184F529248A821000D32F6B /* Preview Assets.xcassets in Resources */,
 				C184F526248A821000D32F6B /* Assets.xcassets in Resources */,
+				C19E3958248BC10F003F0D55 /* planets.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,7 +193,10 @@
 			files = (
 				C184F520248A820F00D32F6B /* AppDelegate.swift in Sources */,
 				C184F522248A820F00D32F6B /* SceneDelegate.swift in Sources */,
+				C19E3956248BC0DA003F0D55 /* EntityLoader.swift in Sources */,
 				C184F524248A820F00D32F6B /* PlanetListRow.swift in Sources */,
+				C19E3950248BBD01003F0D55 /* Planet.swift in Sources */,
+				C19E395A248BC15F003F0D55 /* PlanetMockData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
