@@ -11,6 +11,7 @@
 		C1809EFF248BFB5D009DAB3F /* PlanetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1809EFE248BFB5D009DAB3F /* PlanetService.swift */; };
 		C1809F02248BFDC8009DAB3F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C1809F01248BFDC8009DAB3F /* Alamofire */; };
 		C1809F04248C161D009DAB3F /* PlanetServiceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1809F03248C161D009DAB3F /* PlanetServiceStub.swift */; };
+		C1809F06248C181D009DAB3F /* PlanetDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1809F05248C181D009DAB3F /* PlanetDetail.swift */; };
 		C184F520248A820F00D32F6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C184F51F248A820F00D32F6B /* AppDelegate.swift */; };
 		C184F522248A820F00D32F6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C184F521248A820F00D32F6B /* SceneDelegate.swift */; };
 		C184F524248A820F00D32F6B /* PlanetListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C184F523248A820F00D32F6B /* PlanetListRow.swift */; };
@@ -28,6 +29,7 @@
 		C1809EFA248BF0F8009DAB3F /* PlanetList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetList.swift; sourceTree = "<group>"; };
 		C1809EFE248BFB5D009DAB3F /* PlanetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetService.swift; sourceTree = "<group>"; };
 		C1809F03248C161D009DAB3F /* PlanetServiceStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetServiceStub.swift; sourceTree = "<group>"; };
+		C1809F05248C181D009DAB3F /* PlanetDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDetail.swift; sourceTree = "<group>"; };
 		C184F51C248A820F00D32F6B /* SwiftUITraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C184F51F248A820F00D32F6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C184F521248A820F00D32F6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				C184F523248A820F00D32F6B /* PlanetListRow.swift */,
 				C1809EFA248BF0F8009DAB3F /* PlanetList.swift */,
+				C1809F05248C181D009DAB3F /* PlanetDetail.swift */,
 			);
 			path = Planet;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			files = (
 				C1809F04248C161D009DAB3F /* PlanetServiceStub.swift in Sources */,
 				C184F520248A820F00D32F6B /* AppDelegate.swift in Sources */,
+				C1809F06248C181D009DAB3F /* PlanetDetail.swift in Sources */,
 				C184F522248A820F00D32F6B /* SceneDelegate.swift in Sources */,
 				C1809EFB248BF0F8009DAB3F /* PlanetList.swift in Sources */,
 				C1809EFF248BFB5D009DAB3F /* PlanetService.swift in Sources */,
