@@ -26,7 +26,7 @@ struct PlanetListRow: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct PlanetListRow_Previews: PreviewProvider {
     static var previews: some View {
         PlanetListRow()
             .previewLayout(.fixed(width: 375, height: 80))
