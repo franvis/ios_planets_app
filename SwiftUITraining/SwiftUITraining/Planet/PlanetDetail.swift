@@ -28,9 +28,12 @@ struct PlanetDetail: View {
                 Text(planet.shortDescription)
                     .font(Font.custom("Helvetica", size: 18))
                     .foregroundColor(.white)
+                    .padding(.horizontal, 16)
+                    .multilineTextAlignment(.center)
                 Spacer()
             }
         }
+        .padding(.top, -40)
     }
 }
 
