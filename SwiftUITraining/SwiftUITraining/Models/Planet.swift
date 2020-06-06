@@ -8,7 +8,8 @@
 
 import Foundation
 
-struct Planet: Decodable {
+struct Planet: Decodable, Identifiable {
+    let id: String
     let name: String
     let shortDescription: String
     let imageUrl: URL

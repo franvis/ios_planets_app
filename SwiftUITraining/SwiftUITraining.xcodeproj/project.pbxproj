@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C1809EFB248BF0F8009DAB3F /* PlanetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1809EFA248BF0F8009DAB3F /* PlanetList.swift */; };
+		C1809EFF248BFB5D009DAB3F /* PlanetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1809EFE248BFB5D009DAB3F /* PlanetService.swift */; };
+		C1809F02248BFDC8009DAB3F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C1809F01248BFDC8009DAB3F /* Alamofire */; };
+		C1809F04248C161D009DAB3F /* PlanetServiceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1809F03248C161D009DAB3F /* PlanetServiceStub.swift */; };
 		C184F520248A820F00D32F6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C184F51F248A820F00D32F6B /* AppDelegate.swift */; };
 		C184F522248A820F00D32F6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C184F521248A820F00D32F6B /* SceneDelegate.swift */; };
 		C184F524248A820F00D32F6B /* PlanetListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C184F523248A820F00D32F6B /* PlanetListRow.swift */; };
@@ -21,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C1809EFA248BF0F8009DAB3F /* PlanetList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetList.swift; sourceTree = "<group>"; };
+		C1809EFE248BFB5D009DAB3F /* PlanetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetService.swift; sourceTree = "<group>"; };
+		C1809F03248C161D009DAB3F /* PlanetServiceStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetServiceStub.swift; sourceTree = "<group>"; };
 		C184F51C248A820F00D32F6B /* SwiftUITraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C184F51F248A820F00D32F6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C184F521248A820F00D32F6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +48,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C19E395E248BED36003F0D55 /* SDWebImageSwiftUI in Frameworks */,
+				C1809F02248BFDC8009DAB3F /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				C184F523248A820F00D32F6B /* PlanetListRow.swift */,
+				C1809EFA248BF0F8009DAB3F /* PlanetList.swift */,
 			);
 			path = Planet;
 			sourceTree = "<group>";
@@ -117,6 +126,8 @@
 			children = (
 				C19E3957248BC10F003F0D55 /* planets.json */,
 				C19E3959248BC15F003F0D55 /* PlanetMockData.swift */,
+				C1809EFE248BFB5D009DAB3F /* PlanetService.swift */,
+				C1809F03248C161D009DAB3F /* PlanetServiceStub.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -139,6 +150,7 @@
 			name = SwiftUITraining;
 			packageProductDependencies = (
 				C19E395D248BED36003F0D55 /* SDWebImageSwiftUI */,
+				C1809F01248BFDC8009DAB3F /* Alamofire */,
 			);
 			productName = SwiftUITraining;
 			productReference = C184F51C248A820F00D32F6B /* SwiftUITraining.app */;
@@ -170,6 +182,7 @@
 			mainGroup = C184F513248A820F00D32F6B;
 			packageReferences = (
 				C19E395C248BED36003F0D55 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				C1809F00248BFDC8009DAB3F /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = C184F51D248A820F00D32F6B /* Products */;
 			projectDirPath = "";
@@ -199,8 +212,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1809F04248C161D009DAB3F /* PlanetServiceStub.swift in Sources */,
 				C184F520248A820F00D32F6B /* AppDelegate.swift in Sources */,
 				C184F522248A820F00D32F6B /* SceneDelegate.swift in Sources */,
+				C1809EFB248BF0F8009DAB3F /* PlanetList.swift in Sources */,
+				C1809EFF248BFB5D009DAB3F /* PlanetService.swift in Sources */,
 				C19E3956248BC0DA003F0D55 /* EntityLoader.swift in Sources */,
 				C184F524248A820F00D32F6B /* PlanetListRow.swift in Sources */,
 				C19E3950248BBD01003F0D55 /* Planet.swift in Sources */,
@@ -398,6 +414,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		C1809F00248BFDC8009DAB3F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.1;
+			};
+		};
 		C19E395C248BED36003F0D55 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
@@ -409,6 +433,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C1809F01248BFDC8009DAB3F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C1809F00248BFDC8009DAB3F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		C19E395D248BED36003F0D55 /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C19E395C248BED36003F0D55 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
