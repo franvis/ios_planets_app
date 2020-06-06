@@ -14,8 +14,13 @@ struct PlanetList: View {
     @State private var planets: [Planet] = []
 
     var body: some View {
-        List(planets) { item in
-            PlanetListRow(planet: item)
+        NavigationView {
+            List(planets) { item in
+                NavigationLink(destination: PlanetDetail(planet: item)) {
+                    PlanetListRow(planet: item)
+                }
+            }
+            .navigationBarTitle("Planets")
         }
         .onAppear {
             self.planetService.planets { planets in
