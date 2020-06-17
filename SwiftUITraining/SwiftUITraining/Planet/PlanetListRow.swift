@@ -8,6 +8,7 @@
 
 import SwiftUI
 import SDWebImageSwiftUI
+import planets_multiplatform
 
 struct PlanetListRow: View {
 
@@ -15,7 +16,7 @@ struct PlanetListRow: View {
 
     var body: some View {
         HStack {
-            AnimatedImage(url: planet.imageUrl)
+          AnimatedImage(url: URL(string: planet.imageUrl))
                 .resizable()
                 .frame(width: 60, height: 60)
             VStack(alignment: .leading) {
@@ -26,19 +27,6 @@ struct PlanetListRow: View {
                     .foregroundColor(.gray)
             }
             Spacer()
-        }
-    }
-}
-
-struct PlanetListRow_Previews: PreviewProvider {
-    static var previews: some View {
-        Group {
-            PlanetListRow(planet: PlanetMockData.planets[0])
-                .previewLayout(.fixed(width: 375, height: 80))
-                .previewDisplayName("Mercury")
-            PlanetListRow(planet: PlanetMockData.planets[1])
-                .previewLayout(.fixed(width: 375, height: 80))
-                .previewDisplayName("Jupiter")
         }
     }
 }
