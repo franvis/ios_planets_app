@@ -1,0 +1,16 @@
+PODS:
+  - planets_multiplatform (0.0.12)
+
+DEPENDENCIES:
+  - planets_multiplatform (from `/Users/emiliano.alvarez/Desktop/planets_multiplatform`)
+
+EXTERNAL SOURCES:
+  planets_multiplatform:
+    :path: "/Users/emiliano.alvarez/Desktop/planets_multiplatform"
+
+SPEC CHECKSUMS:
+  planets_multiplatform: 0543fb81d9657c230d3342c5d5082194cad16d6f
+
+PODFILE CHECKSUM: bd60a11cdf823240fafdc669518de90518dab9a5
+
+COCOAPODS: 1.8.4

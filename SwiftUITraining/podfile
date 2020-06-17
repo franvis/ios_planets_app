@@ -1,0 +1,5 @@
+use_frameworks!
+
+target 'SwiftUITraining' do
+pod 'planets_multiplatform', :path => '/Users/emiliano.alvarez/Desktop/planets_multiplatform'
+end
